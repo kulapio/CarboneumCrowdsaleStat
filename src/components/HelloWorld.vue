@@ -1,4 +1,3 @@
-/* eslint-disable */
 <template>
   <div class="hello">
 
@@ -115,18 +114,18 @@ export default {
       iconUsdRate: 1.62,
 
       // Carbonium ETH Buy
-      ethBuyParticipants: 0,
-      ethBuyEthTotal: 0,
-      ethBuyUsdTotal: 0,
-      ethBuyC8Total: 0,
+      ethBuyParticipants: '-',
+      ethBuyEthTotal: '-',
+      ethBuyUsdTotal: '-',
+      ethBuyC8Total: '-',
 
       // Carbonium ICON Buy
-      iconBuyParticipants: 0,
-      iconBuyIconTotal: 0,
-      iconBuyUsdTotal: 0,
-      iconBuyC8Total: 0,
+      iconBuyParticipants: '-',
+      iconBuyIconTotal: '-',
+      iconBuyUsdTotal: '-',
+      iconBuyC8Total: '-',
 
-      cloudSaleAbi: [
+      crowdsaleAbi: [
         {
           'constant': true,
           'inputs': [],
@@ -629,7 +628,7 @@ export default {
           'type': 'event'
         }
       ],
-      cloudSaleContractAddr: '0x88b6d8d018118f6da4842Fae44D39E2bc52B75Aa'
+      crowdsaleContractAddr: '0x88b6d8d018118f6da4842Fae44D39E2bc52B75Aa'
     }
   },
   created: function () {
@@ -652,16 +651,16 @@ export default {
       this.web3 = new Web3(new Web3.providers.HttpProvider('https://mainnet.infura.io/8kkr6X3gKuB8cURFQsfa'))
     },
     getVersion () {
-      console.log(this.web3.version)
+      // console.log(this.web3.version)
     },
     getCarboniumCrowdsaleContract () {
-      let contract = new this.web3.eth.Contract(this.crowdsaleAbi, this.cloudSaleContractAddr)
+      let contract = new this.web3.eth.Contract(this.crowdsaleAbi, this.crowdsaleContractAddr)
       return contract
     },
-    getCarboniumRate () {
-      let contract = this.getCarboniumCrowdsaleContract()
-      contract.methods.rate().call().then(console.log)
-    },
+    // getCarboniumRate () {
+    //   let contract = this.getCarboniumCrowdsaleContract()
+    //   contract.methods.rate().call().then(console.log)
+    // },
     getEthBuyHistory () {
       let fromBlockHeight = 5816274
       let toBlock = 'latest'
@@ -679,15 +678,15 @@ export default {
           for (var i = 0; i < events.length; i++) {
             let event = events[i]
 
-            let purchaser = event.returnValues.purchaser
-            let beneficiary = event.returnValues.beneficiary
-            let value = event.returnValues.value
-            let amount = event.returnValues.amount
+            // let purchaser = event.returnValues.purchaser
+            // let beneficiary = event.returnValues.beneficiary
+            // let value = event.returnValues.value
+            // let amount = event.returnValues.amount
 
-            console.log('purchaser: ' + purchaser)
-            console.log('beneficiary: ' + beneficiary)
-            console.log('value: ' + value)
-            console.log('amount: ' + amount)
+            // console.log('purchaser: ' + purchaser)
+            // console.log('beneficiary: ' + beneficiary)
+            // console.log('value: ' + value)
+            // console.log('amount: ' + amount)
 
             // let address = event.address;
             // let blockHash = event.blockHash;
@@ -736,15 +735,15 @@ export default {
           for (var i = 0; i < events.length; i++) {
             let event = events[i]
 
-            let purchaser = event.returnValues.purchaser
-            let beneficiary = event.returnValues.beneficiary
-            let value = event.returnValues.value
-            let amount = event.returnValues.amount
+            // let purchaser = event.returnValues.purchaser
+            // let beneficiary = event.returnValues.beneficiary
+            // let value = event.returnValues.value
+            // let amount = event.returnValues.amount
 
-            console.log('purchaser: ' + purchaser)
-            console.log('beneficiary: ' + beneficiary)
-            console.log('value: ' + value)
-            console.log('amount: ' + amount)
+            // console.log('purchaser: ' + purchaser)
+            // console.log('beneficiary: ' + beneficiary)
+            // console.log('value: ' + value)
+            // console.log('amount: ' + amount)
 
             // let address = event.address;
             // let blockHash = event.blockHash;
