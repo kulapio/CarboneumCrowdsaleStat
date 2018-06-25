@@ -654,18 +654,18 @@ export default {
     getVersion () {
       console.log(this.web3.version)
     },
-    getCarboniumCloudSaleContract () {
-      let contract = new this.web3.eth.Contract(this.cloudSaleAbi, this.cloudSaleContractAddr)
+    getCarboniumCrowdsaleContract () {
+      let contract = new this.web3.eth.Contract(this.crowdsaleAbi, this.cloudSaleContractAddr)
       return contract
     },
     getCarboniumRate () {
-      let contract = this.getCarboniumCloudSaleContract()
+      let contract = this.getCarboniumCrowdsaleContract()
       contract.methods.rate().call().then(console.log)
     },
     getEthBuyHistory () {
       let fromBlockHeight = 5816274
       let toBlock = 'latest'
-      let contract = this.getCarboniumCloudSaleContract()
+      let contract = this.getCarboniumCrowdsaleContract()
       contract.getPastEvents('TokenPurchase', {
         // filter: {_trader: userAddress},
         filter: {}, // Using an array means OR: e.g. 20 or 23
@@ -722,7 +722,7 @@ export default {
     getIconBuyHistory () {
       let fromBlockHeight = 5816274
       let toBlock = 'latest'
-      let contract = this.getCarboniumCloudSaleContract()
+      let contract = this.getCarboniumCrowdsaleContract()
       contract.getPastEvents('TokenPurchaseWithIcon', {
         // filter: {_trader: userAddress},
         filter: {}, // Using an array means OR: e.g. 20 or 23
