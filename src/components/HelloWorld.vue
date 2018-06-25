@@ -13,7 +13,7 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
-          Carboneum ETH Buy Stats
+          ETH Buy Stats
         </h1>
         <h2 class="subtitle">
           
@@ -53,7 +53,7 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
-          Carboneum ICON Buy Stats
+          ICON Buy Stats
         </h1>
         <h2 class="subtitle">
           
