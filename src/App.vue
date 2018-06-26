@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <img id="logo" src="./assets/carboneum_logo.png">
-    <HelloWorld/>
+    <CrowdsaleStat/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CrowdsaleStat from './components/CrowdsaleStat.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    CrowdsaleStat
   }
 }
 </script>

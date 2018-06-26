@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="crowdsale_stat">
 
     <!-- <section class="section">
     <div class="container">
@@ -102,7 +102,7 @@ import Web3 from 'web3'
 import formatCurrency from 'format-currency'
 
 export default {
-  name: 'HelloWorld',
+  name: 'CrowdsaleStat',
   data () {
     return {
       msg: 'Carboneum Crowdsale Stat',
