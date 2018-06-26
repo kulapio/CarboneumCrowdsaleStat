@@ -1,18 +1,18 @@
 <template>
   <div id="app">
+    <div class="breadcrumbs">
+      <a href='/#/'>Home</a>
+      <a href='/#/hello'>Hello</a>
+    </div>
     <img id="logo" src="./assets/carboneum_logo.png">
-    <CrowdsaleStat/>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import CrowdsaleStat from './components/CrowdsaleStat.vue'
 
 export default {
-  name: 'app',
-  components: {
-    CrowdsaleStat
-  }
+  name: 'App'
 }
 </script>
 
