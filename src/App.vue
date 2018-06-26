@@ -1,10 +1,10 @@
 <template>
   <div id="app">
+    <img id="logo" src="./assets/carboneum_logo.png">
     <div class="breadcrumbs">
       <a href='/#/'>Home</a>
-      <a href='/#/hello'>Hello</a>
+      <a href='/#/About'>About</a>
     </div>
-    <img id="logo" src="./assets/carboneum_logo.png">
     <router-view/>
   </div>
 </template>
@@ -15,6 +15,14 @@ export default {
   name: 'App'
 }
 </script>
+
+<style scoped>
+.breadcrumbs a {
+  margin: 0.5em;
+  padding: 0.5em;
+}
+</style>
+
 
 <style>
 #app {

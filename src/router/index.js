@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import CrowdsaleStat from '@/components/CrowdsaleStat'
-import HelloWorld from '@/components/HelloWorld'
+import About from '@/components/About'
 
 Vue.use(Router)
 
@@ -13,9 +13,9 @@ export default new Router({
       component: CrowdsaleStat
     },
     {
-      path: '/hello',
-      name: 'HelloWorld',
-      component: HelloWorld
+      path: '/About',
+      name: 'About',
+      component: About
     }
   ]
 })
