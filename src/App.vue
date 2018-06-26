@@ -6,6 +6,12 @@
       <a href='/#/About'>About</a>
     </div>
     <router-view/>
+
+    <div class="container ft">
+      <div class="notification">
+        power by <strong><a href='https://kulap.io/'>kulap.io</a></strong>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -35,5 +41,9 @@ export default {
 }
 #logo {
   width: 250px;
+}
+.ft {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
 }
 </style>

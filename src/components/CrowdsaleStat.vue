@@ -78,13 +78,6 @@
         </article>
       </div>
     </div>
-
-    <div class="container">
-      <div class="notification">
-        power by <strong><a href='https://kulap.io/'>kulap.io</a></strong>
-      </div>
-    </div>
-
   </div>
 </template>
 
