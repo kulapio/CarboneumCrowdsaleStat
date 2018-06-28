@@ -16,7 +16,7 @@
     <section>
 
         <b-message title="Note" size="is-medium">
-            Crowdsale stats come from ethereum smart contract at <a href='https://etherscan.io/address/0x88b6d8d018118f6da4842Fae44D39E2bc52B75Aa'>0x88b6d8d018118f6da4842Fae44D39E2bc52B75Aa</a>.
+            Crowdsale stats come from ethereum smart contract at <a class="link" href='https://etherscan.io/address/0x88b6d8d018118f6da4842Fae44D39E2bc52B75Aa'>0x88b6d8d018118f6da4842Fae44D39E2bc52B75Aa</a>.
             <br />
             Keep in mind that all stats here are not includ private/pre crowdsale.
             <br />
@@ -25,7 +25,7 @@
         </b-message>
 
         <b-message title="Open source" size="is-medium">
-            <a href='https://github.com/kulapio/CarboneumCrowdsaleStat'>https://github.com/kulapio/CarboneumCrowdsaleStat</a>
+            <a class="link" href='https://github.com/kulapio/CarboneumCrowdsaleStat'>https://github.com/kulapio/CarboneumCrowdsaleStat</a>
             <br />
             <br />
             ** Please make PR if you're a developer ^_^.
@@ -46,6 +46,12 @@ export default {
 }
 </script>
 
+<style>
+.media-content {
+  width: 100%;
+}
+</style>
+
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1, h2 {
@@ -61,5 +67,12 @@ li {
 }
 a {
   color: #42b983;
+}
+.link {
+  display:inline-block;
+  width:100%;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
 }
 </style>
